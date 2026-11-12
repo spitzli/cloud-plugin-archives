@@ -1,17 +1,17 @@
 {
   "binaries": [
-    "webdock-archives"
+    "spitzli-archives"
   ],
   "connectionsOwner": "Core",
   "coreIntegrationDependencies": [
-    "webdock-browser-session",
-    "webdock-build",
-    "webdock-databases",
-    "webdock-hosting",
-    "webdock-identity",
-    "webdock-ids",
-    "webdock-persistence",
-    "webdock-plugin-host"
+    "spitzli-browser-session",
+    "spitzli-build",
+    "spitzli-databases",
+    "spitzli-hosting",
+    "spitzli-identity",
+    "spitzli-ids",
+    "spitzli-persistence",
+    "spitzli-plugin-host"
   ],
   "coreIntegrationTests": [
     "connected_export_compile.rs",
@@ -21,10 +21,10 @@
     "reports.rs",
     "repository.rs"
   ],
-  "entrypoint": "webdock-archives",
+  "entrypoint": "spitzli-archives",
   "lockfileRequiresRegeneration": true,
   "name": "archives",
-  "package": "webdock-archives",
+  "package": "spitzli-archives",
   "release": {
     "mode": "native-extension",
     "protocol": "webdock.plugin.v2",
@@ -33,15 +33,15 @@
     "version": "0.3.0"
   },
   "sdkDependencies": [
-    "webdock-export-protocol",
-    "webdock-object-storage",
-    "webdock-plugin-http",
-    "webdock-plugin-kit",
-    "webdock-plugin-protocol",
-    "webdock-plugin-runtime",
-    "webdock-repository-protocol"
+    "spitzli-export-protocol",
+    "spitzli-object-storage",
+    "spitzli-plugin-http",
+    "spitzli-plugin-kit",
+    "spitzli-plugin-protocol",
+    "spitzli-plugin-runtime",
+    "spitzli-repository-protocol"
   ],
   "sdkGit": "https://github.com/spitzli/cloud-plugin-sdk",
-  "sdkRevision": "8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6",
+  "sdkRevision": "8019f3df67dba3fed3083f22635e4725028c1b5e",
   "source": "plugins/archives"
 }

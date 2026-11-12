@@ -1,5 +1,5 @@
 ["package"]
-"name" = "webdock-archives"
+"name" = "spitzli-archives"
 "version" = "0.3.0"
 "edition" = "2024"
 "rust-version" = "1.94"
@@ -18,10 +18,10 @@
 "async-trait" = "0.1"
 "tempfile" = "3"
 
-["dependencies"."webdock-export-protocol"]
+["dependencies"."spitzli-export-protocol"]
 "git" = "https://github.com/spitzli/cloud-plugin-sdk"
-"rev" = "8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-"package" = "webdock-export-protocol"
+"rev" = "8019f3df67dba3fed3083f22635e4725028c1b5e"
+"package" = "spitzli-export-protocol"
 
 ["dependencies"."serde"]
 "version" = "1"
@@ -31,20 +31,20 @@
 "version" = "1"
 "features" = ["macros", "rt-multi-thread", "signal", "time", "process", "io-util", "fs"]
 
-["dependencies"."webdock-plugin-protocol"]
+["dependencies"."spitzli-plugin-protocol"]
 "git" = "https://github.com/spitzli/cloud-plugin-sdk"
-"rev" = "8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-"package" = "webdock-plugin-protocol"
+"rev" = "8019f3df67dba3fed3083f22635e4725028c1b5e"
+"package" = "spitzli-plugin-protocol"
 
-["dependencies"."webdock-plugin-runtime"]
+["dependencies"."spitzli-plugin-runtime"]
 "git" = "https://github.com/spitzli/cloud-plugin-sdk"
-"rev" = "8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-"package" = "webdock-plugin-runtime"
+"rev" = "8019f3df67dba3fed3083f22635e4725028c1b5e"
+"package" = "spitzli-plugin-runtime"
 
-["dependencies"."webdock-plugin-kit"]
+["dependencies"."spitzli-plugin-kit"]
 "git" = "https://github.com/spitzli/cloud-plugin-sdk"
-"rev" = "8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-"package" = "webdock-plugin-kit"
+"rev" = "8019f3df67dba3fed3083f22635e4725028c1b5e"
+"package" = "spitzli-plugin-kit"
 
 ["dependencies"."tonic"]
 "version" = "0.14.6"
@@ -58,10 +58,10 @@
 "version" = "0.7"
 "features" = ["with-uuid-1"]
 
-["dependencies"."webdock-object-storage"]
+["dependencies"."spitzli-object-storage"]
 "git" = "https://github.com/spitzli/cloud-plugin-sdk"
-"rev" = "8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-"package" = "webdock-object-storage"
+"rev" = "8019f3df67dba3fed3083f22635e4725028c1b5e"
+"package" = "spitzli-object-storage"
 
 ["dependencies"."aws-sdk-s3"]
 "version" = "=1.137.0"
@@ -79,17 +79,17 @@
 
 ["features"]
 "local-native-fixture" = []
-"local-test" = ["webdock-object-storage/local-test"]
+"local-test" = ["spitzli-object-storage/local-test"]
 
 ["dev-dependencies"]
 "chrono" = "0.4"
 "rcgen" = "0.14"
 "futures-util" = "0.3"
 
-["dev-dependencies"."webdock-repository-protocol"]
+["dev-dependencies"."spitzli-repository-protocol"]
 "git" = "https://github.com/spitzli/cloud-plugin-sdk"
-"rev" = "8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-"package" = "webdock-repository-protocol"
+"rev" = "8019f3df67dba3fed3083f22635e4725028c1b5e"
+"package" = "spitzli-repository-protocol"
 
 ["dev-dependencies"."tokio-stream"]
 "version" = "0.1"
@@ -100,10 +100,10 @@
 "default-features" = false
 "features" = ["macros", "sqlx-postgres", "runtime-tokio-rustls", "with-json", "with-chrono"]
 
-["dev-dependencies"."webdock-plugin-http"]
+["dev-dependencies"."spitzli-plugin-http"]
 "git" = "https://github.com/spitzli/cloud-plugin-sdk"
-"rev" = "8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-"package" = "webdock-plugin-http"
+"rev" = "8019f3df67dba3fed3083f22635e4725028c1b5e"
+"package" = "spitzli-plugin-http"
 
 ["lints"]
 
