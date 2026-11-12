@@ -4067,6 +4067,181 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "023a211cb3138dbc438680b32560ad89f699977624c9f8dbb95a47d5b4c07dd3"
 
 [[package]]
+name = "spitzli-archives"
+version = "0.3.0"
+dependencies = [
+ "async-trait",
+ "aws-sdk-s3",
+ "chrono",
+ "ed25519-dalek",
+ "flate2",
+ "futures-util",
+ "hex",
+ "rcgen",
+ "rustix",
+ "rustls 0.23.46",
+ "sea-orm",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+ "spitzli-export-protocol",
+ "spitzli-object-storage",
+ "spitzli-plugin-http",
+ "spitzli-plugin-kit",
+ "spitzli-plugin-protocol",
+ "spitzli-plugin-runtime",
+ "spitzli-repository-protocol",
+ "tempfile",
+ "tokio",
+ "tokio-postgres",
+ "tokio-stream",
+ "tonic",
+ "url",
+ "uuid",
+]
+
+[[package]]
+name = "spitzli-export-protocol"
+version = "0.1.0"
+source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8019f3df67dba3fed3083f22635e4725028c1b5e#8019f3df67dba3fed3083f22635e4725028c1b5e"
+dependencies = [
+ "base64 0.22.1",
+ "hex",
+ "hmac 0.12.1",
+ "prost",
+ "prost-build",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+ "tonic",
+ "tonic-prost",
+ "tonic-prost-build",
+]
+
+[[package]]
+name = "spitzli-object-storage"
+version = "0.1.0"
+source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8019f3df67dba3fed3083f22635e4725028c1b5e#8019f3df67dba3fed3083f22635e4725028c1b5e"
+dependencies = [
+ "bytes",
+ "futures-util",
+ "hex",
+ "object_store",
+ "reqwest 0.13.5",
+ "rustls 0.23.46",
+ "serde",
+ "sha2 0.10.9",
+ "thiserror 2.0.21",
+ "tokio",
+ "url",
+ "uuid",
+]
+
+[[package]]
+name = "spitzli-plugin-http"
+version = "0.1.0"
+source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8019f3df67dba3fed3083f22635e4725028c1b5e#8019f3df67dba3fed3083f22635e4725028c1b5e"
+dependencies = [
+ "futures-util",
+ "reqwest 0.12.28",
+ "serde",
+ "thiserror 2.0.21",
+ "url",
+]
+
+[[package]]
+name = "spitzli-plugin-kit"
+version = "0.1.0"
+source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8019f3df67dba3fed3083f22635e4725028c1b5e#8019f3df67dba3fed3083f22635e4725028c1b5e"
+dependencies = [
+ "aes-gcm",
+ "getrandom 0.2.17",
+ "hex",
+ "rustix",
+ "rustls 0.23.46",
+ "rustls-pemfile",
+ "serde",
+ "serde_json",
+ "spitzli-plugin-protocol",
+ "spitzli-plugin-runtime",
+ "tokio",
+ "tokio-postgres",
+ "tokio-postgres-rustls",
+ "tonic",
+ "url",
+ "uuid",
+]
+
+[[package]]
+name = "spitzli-plugin-protocol"
+version = "0.1.0"
+source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8019f3df67dba3fed3083f22635e4725028c1b5e#8019f3df67dba3fed3083f22635e4725028c1b5e"
+dependencies = [
+ "base64 0.22.1",
+ "chrono",
+ "ed25519-dalek",
+ "jsonschema",
+ "node-semver",
+ "regex",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+ "url",
+ "uuid",
+]
+
+[[package]]
+name = "spitzli-plugin-runtime"
+version = "0.1.0"
+source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8019f3df67dba3fed3083f22635e4725028c1b5e#8019f3df67dba3fed3083f22635e4725028c1b5e"
+dependencies = [
+ "ed25519-dalek",
+ "hex",
+ "hyper-util",
+ "prost",
+ "rustix",
+ "rustls 0.23.46",
+ "rustls-pemfile",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+ "spitzli-plugin-protocol",
+ "tokio",
+ "tokio-rustls 0.26.6",
+ "tokio-stream",
+ "tonic",
+ "tonic-prost",
+ "tonic-prost-build",
+ "tower",
+ "url",
+ "x509-parser",
+]
+
+[[package]]
+name = "spitzli-repository-protocol"
+version = "0.1.0"
+source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8019f3df67dba3fed3083f22635e4725028c1b5e#8019f3df67dba3fed3083f22635e4725028c1b5e"
+dependencies = [
+ "async-trait",
+ "base64 0.22.1",
+ "ed25519-dalek",
+ "hex",
+ "prost",
+ "rustix",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+ "spitzli-plugin-protocol",
+ "spitzli-plugin-runtime",
+ "tokio",
+ "tokio-stream",
+ "tonic",
+ "tonic-prost",
+ "tonic-prost-build",
+ "uuid",
+]
+
+[[package]]
 name = "spki"
 version = "0.7.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5070,181 +5245,6 @@ checksum = "5a6580f308b1fad9207618087a65c04e7a10bc77e02c8e84e9b00dd4b12fa0bb"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
-]
-
-[[package]]
-name = "webdock-archives"
-version = "0.3.0"
-dependencies = [
- "async-trait",
- "aws-sdk-s3",
- "chrono",
- "ed25519-dalek",
- "flate2",
- "futures-util",
- "hex",
- "rcgen",
- "rustix",
- "rustls 0.23.46",
- "sea-orm",
- "serde",
- "serde_json",
- "sha2 0.10.9",
- "tempfile",
- "tokio",
- "tokio-postgres",
- "tokio-stream",
- "tonic",
- "url",
- "uuid",
- "webdock-export-protocol",
- "webdock-object-storage",
- "webdock-plugin-http",
- "webdock-plugin-kit",
- "webdock-plugin-protocol",
- "webdock-plugin-runtime",
- "webdock-repository-protocol",
-]
-
-[[package]]
-name = "webdock-export-protocol"
-version = "0.1.0"
-source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6#8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-dependencies = [
- "base64 0.22.1",
- "hex",
- "hmac 0.12.1",
- "prost",
- "prost-build",
- "serde",
- "serde_json",
- "sha2 0.10.9",
- "tonic",
- "tonic-prost",
- "tonic-prost-build",
-]
-
-[[package]]
-name = "webdock-object-storage"
-version = "0.1.0"
-source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6#8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-dependencies = [
- "bytes",
- "futures-util",
- "hex",
- "object_store",
- "reqwest 0.13.5",
- "rustls 0.23.46",
- "serde",
- "sha2 0.10.9",
- "thiserror 2.0.21",
- "tokio",
- "url",
- "uuid",
-]
-
-[[package]]
-name = "webdock-plugin-http"
-version = "0.1.0"
-source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6#8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-dependencies = [
- "futures-util",
- "reqwest 0.12.28",
- "serde",
- "thiserror 2.0.21",
- "url",
-]
-
-[[package]]
-name = "webdock-plugin-kit"
-version = "0.1.0"
-source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6#8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-dependencies = [
- "aes-gcm",
- "getrandom 0.2.17",
- "hex",
- "rustix",
- "rustls 0.23.46",
- "rustls-pemfile",
- "serde",
- "serde_json",
- "tokio",
- "tokio-postgres",
- "tokio-postgres-rustls",
- "tonic",
- "url",
- "uuid",
- "webdock-plugin-protocol",
- "webdock-plugin-runtime",
-]
-
-[[package]]
-name = "webdock-plugin-protocol"
-version = "0.1.0"
-source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6#8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-dependencies = [
- "base64 0.22.1",
- "chrono",
- "ed25519-dalek",
- "jsonschema",
- "node-semver",
- "regex",
- "serde",
- "serde_json",
- "sha2 0.10.9",
- "url",
- "uuid",
-]
-
-[[package]]
-name = "webdock-plugin-runtime"
-version = "0.1.0"
-source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6#8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-dependencies = [
- "ed25519-dalek",
- "hex",
- "hyper-util",
- "prost",
- "rustix",
- "rustls 0.23.46",
- "rustls-pemfile",
- "serde",
- "serde_json",
- "sha2 0.10.9",
- "tokio",
- "tokio-rustls 0.26.6",
- "tokio-stream",
- "tonic",
- "tonic-prost",
- "tonic-prost-build",
- "tower",
- "url",
- "webdock-plugin-protocol",
- "x509-parser",
-]
-
-[[package]]
-name = "webdock-repository-protocol"
-version = "0.1.0"
-source = "git+https://github.com/spitzli/cloud-plugin-sdk?rev=8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6#8ed57d89c3263b050f126e4c2ba7f6cdebb0daa6"
-dependencies = [
- "async-trait",
- "base64 0.22.1",
- "ed25519-dalek",
- "hex",
- "prost",
- "rustix",
- "serde",
- "serde_json",
- "sha2 0.10.9",
- "tokio",
- "tokio-stream",
- "tonic",
- "tonic-prost",
- "tonic-prost-build",
- "uuid",
- "webdock-plugin-protocol",
- "webdock-plugin-runtime",
 ]
 
 [[package]]
